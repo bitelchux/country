@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+  <title>Country</title>
+  <meta name="description" content="Country.is is a tiny HTTP service that looks up a client in a GeoIP database and returns its country in JSON format.">
+  <style type="text/css">
+    body {
+      margin-top: 20%;
+      color: #fff;
+      background: #464545;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="https://github.com/outofprint/country">
+      <img class="logo" alt="logo" src="images/location.png">
+    </a>
+    <h1>country.is</h1>
+  </header>
+  <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script>
+    $.getJSON( "//api.country.is?callback=?", function( data ) {
+      $("h1").html('{"country":"' + data.country + '"}');
+    });
+  </script>
+</body>
+</html>
