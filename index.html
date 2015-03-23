@@ -23,9 +23,13 @@
   </header>
   <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
   <script>
-    $.getJSON( "//api.country.is?callback=?", function( data ) {
-      $("h1").html('{"country":"' + data.country + '"}');
-    });
+    $.getJSON( "//api.country.is?callback=?")
+      .done(function(data) {
+        $("h1").html('{"country":"' + data.country + '"}');
+      })
+      .fail(function() {
+        $("h1").html('{"error":"not found"}');
+      });
   </script>
 </body>
 </html>
