@@ -1,10 +1,10 @@
 <!doctype html>
 <html>
 <head>
-  <title>Country.is</title>
+  <title>Country.is | Geolocation API that finds the country of the requesting IP</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Country.is tells your browser which country it's in. It uses IP geolocation, so there's no disruptive prompt.">
+  <meta name="description" content="Country.is is a minimal geolocation API that finds the country of the requesting IP.">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
   <link rel="stylesheet" href="css/vs2015.css">
   <style type="text/css">
@@ -23,8 +23,12 @@
     }
 
     .wrapper {
-      max-width: 600px;
+      max-width: 720px;
       text-align: center;
+    }
+
+    img {
+      width: 100px;
     }
 
     p {
@@ -42,7 +46,7 @@
 
     code {
       line-height: 1.3;
-      padding: 30px !important;
+      padding: 20px !important;
       text-align: left;
     }
 
@@ -53,8 +57,10 @@
 </head>
 <body>
   <div class="wrapper">
+    <img src="img/globe.png">
     <p>
-      <strong>Country.is</strong> is a minimal API that tells your browser which country it is in. It uses IP geolocation with <a href="http://www.maxmind.com">GeoLite2 data</a> created by MaxMind, so there's no disruptive prompt.
+      <strong>Country.is</strong> is a geolocation API that finds the country of the requesting IP.
+      It uses <a href="http://www.maxmind.com">GeoLite2 data</a> created by MaxMind.
     </p>
     <p>
       Click below for a demo.
