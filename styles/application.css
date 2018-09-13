@@ -1,0 +1,103 @@
+body {
+  background-color: #F5F5F5;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header.container {
+  background-color: #373277;
+  color: #FFF;
+  padding-bottom: 15px;
+  padding-top: 45px;
+  text-align: center;
+}
+
+header.container img {
+  width: 200px;
+}
+
+header.container h1 {
+  font-size: 56px;
+  font-weight: normal;
+  margin: 0;
+}
+
+header.container h2 {
+  font-size: 20px;
+  margin-top: 0;
+}
+
+header.container nav ul {
+  list-style-type: none;
+  margin-bottom: 45px;
+  padding-left: 0;
+}
+
+header.container nav li {
+  display: inline-block;
+}
+
+header.container nav li:not(:last-child) {
+  padding-right: 15px;
+}
+
+header.container nav a {
+  color: #B5A0FF;
+  text-decoration: none;
+}
+
+.main.container {
+  color: #444;
+  padding: 30px 15px 0;
+}
+
+.main.container h3,
+.main.container p,
+.main.container pre {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main.container h3 {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.main.container h3 + p {
+  margin-top: 5px;
+}
+
+.main.container em,
+.main.container a
+ {
+  color: #0072BE;
+}
+
+.main.container pre {
+  white-space: normal;
+}
+
+.hljs {
+  padding: 20px !important;
+  white-space: pre;
+}
+
+.http {
+  color: #2D4A53;
+}
+
+.http:hover {
+  cursor: pointer;
+}
+
+footer.container {
+  font-size: 13px;
+  padding: 30px;
+  text-align: center;
+}
+
+.cc-message {
+  text-align: left;
+}
